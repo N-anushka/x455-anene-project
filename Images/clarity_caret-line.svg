@@ -1,0 +1,28 @@
+<svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="26" height="27" fill="#E8E8E8"/>
+<g id="Home">
+<g clip-path="url(#clip0_3243_178)">
+<rect x="-273" y="-1301" width="1512" height="2675" fill="#0D1321"/>
+<g id="Frame 455">
+<g id="Frame 491">
+<g id="Frame 454">
+<g id="Frame 467">
+<g id="clarity:caret-line" clip-path="url(#clip1_3243_178)">
+<path id="Vector" d="M9.73584 21.8201L18.3447 13.5001L9.73584 5.18012C9.50119 4.9541 9.18637 4.83055 8.86063 4.83664C8.53489 4.84274 8.22492 4.97798 7.99889 5.21262C7.77287 5.44727 7.64932 5.76209 7.65541 6.08783C7.66151 6.41357 7.79675 6.72355 8.03139 6.94957L14.8131 13.5001L8.03139 20.0579C7.79675 20.2839 7.66151 20.5939 7.65541 20.9196C7.64932 21.2454 7.77287 21.5602 7.99889 21.7948C8.22492 22.0295 8.53489 22.1647 8.86063 22.1708C9.18637 22.1769 9.50119 22.0534 9.73584 21.8273V21.8201Z" fill="#1B76FF"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<rect x="-272.5" y="-1300.5" width="1511" height="2674" stroke="black"/>
+</g>
+<defs>
+<clipPath id="clip0_3243_178">
+<rect x="-273" y="-1301" width="1512" height="2675" fill="white"/>
+</clipPath>
+<clipPath id="clip1_3243_178">
+<rect width="26" height="26" fill="white" transform="matrix(0 1 -1 0 26 0.5)"/>
+</clipPath>
+</defs>
+</svg>

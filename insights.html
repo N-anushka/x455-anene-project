@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<body style="background-color:#0D1321;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assist Well</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <!-- Primary Navigation-->
+        <nav class="navbar">
+            <div class="logo">
+                Assist<span>Well</span>
+                </div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="guide.html">Guide</a></li>
+                    <li><a href="insights.html" style="color:#58cce6; font-weight: 800">Insights</a></li>
+                    </ul>
+            </div>
+        </nav>
+        <!-- Secondary Navigation-->
+         <nav class="secondary-nav">
+            <div class="nav-actions">
+                <input type="text" placeholder="Search" class="search-bar">
+                <img src="Images/la_cart-plus.png" height="10px"; width="10px"; color="#ffffff" alt="Cart" class="cart-icon">
+            </div>
+        </nav>
+    </header>
+    <!-- Insights-->
+    <br><br>
+    <h1 class="h1">Insights</h1>
+    <br><p class="p1">A blend of expert health articles and visual content to help you stay informed and inspired.</p>
+    <br>
+    <p class="h2">Featured Blogs & Articles</p>
+    <!-- Gallery-->
+    <br><br>
+    <h1 class="h1">Gallery</h1>
+    <br>
+    <div class="section1">
+        <div class="section-item">
+            <P class="p1-columns">Take a Look at AssistWell: </P>
+            <p class="p1-columns">📷 How It Works – See the AssistWell Sensor, App, and Dashboard in action.</p>
+            <p class="p1-columns">📷 User Transformations – Before & After health progress reports.</p>
+            <p class="p1-columns">📷 AssistWell in the Real World – Community stories and experiences.</p><br>
+            <p class="p1-columns">Stay Informed! Stay Healthy!</P>
+        </div>
+    <!-- 6 Photo grid-->
+        <div class="section-item">
+            <div class="image-grid" style="width: 50%;">
+            <img src="/Images/unnamed.png" alt="Image 1" onclick="openLightbox(this)">
+            <img src="/Images/image 2.png" alt="Image 2" onclick="openLightbox(this)">
+            <img src="/Images/image 1.png" alt="Image 3" onclick="openLightbox(this)">
+            <img src="/Images/Design.png" alt="Image 4" onclick="openLightbox(this)">
+            <img src="/Images/Home Page_thumb.png" alt="Image 5" onclick="openLightbox(this)">
+            <img src="/Images/Asset 221 1.png" alt="Image 6" onclick="openLightbox(this)">
+            </div>
+        </div>    
+    <!-- Lightbox Modal -->
+    <!-- Lightbox Modal -->
+        <div id="lightbox" class="lightbox">
+            <span class="close-btn" onclick="closeLightbox()">×</span>
+            <img id="lightbox-img" src="" alt="lightbox image">
+            <span class="prev" onclick="changeImage(-1)">&#10094;</span>
+            <span class="next" onclick="changeImage(1)">&#10095;</span>
+        </div>
+    </div>
+    <br><br>
+    <!-- Footer-->
+    <footer class="footer">
+        <p class="footer-title"> Contact Us:</p><br>
+        <p class="footer-body"> Email: contact@assistwell.com</p><br>
+        <p class="footer-body"> Phone: (123) 456-7890</p><br>
+        <img src="/Images/prime_twitter.svg" height="20px"; width="20px">
+        <img src="/Images/mdi_linkedin.svg" height="20px"; width="20px">
+        <img src="/Images/mdi_instagram.svg" height="20px"; width="20px">
+        <img src="/Images/ic_baseline-facebook.svg" height="20px"; width="20px">
+        <br><br>
+        <p class="footer-body"> © 2025 Assist Well. All rights reserved.</p><br>
+     </footer>
+</body>
+<script>
+    const images = Array.from(document.querySelectorAll('.image-grid img'));
+  let currentIndex = 0;
+
+  function openLightbox(img) {
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+    currentIndex = images.indexOf(img);
+    lightboxImg.src = img.src;
+    lightbox.style.display = "flex";
+  }
+
+  function closeLightbox() {
+    document.getElementById("lightbox").style.display = "none";
+  }
+
+  function changeImage(direction) {
+    currentIndex += direction;
+    if (currentIndex < 0) currentIndex = images.length - 1;
+    if (currentIndex >= images.length) currentIndex = 0;
+    document.getElementById("lightbox-img").src = images[currentIndex].src;
+  }
+</script>
+</html>
