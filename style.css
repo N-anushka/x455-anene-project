@@ -328,6 +328,17 @@ body {
     column-gap: 0px;
 }
 
+.new-section-insights {
+    margin-left: 0px;
+    margin-right: 128px;
+    overflow: visible;
+    background: none;
+    color: #ffffff;
+    text-overflow: ellipsis;
+    word-wrap: break-word; 
+    max-width: 100%;
+}
+
 .section-item {
     margin-left: 128px;
     margin-right: 128px;
