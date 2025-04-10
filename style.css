@@ -340,8 +340,8 @@ body {
 }
 
 .section-item {
-    margin-left: 128px;
-    margin-right: 128px;
+    margin-left: 0px;
+    margin-right: 0px;
     overflow: visible;
     background: none;
     color: #ffffff;
