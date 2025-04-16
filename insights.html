@@ -13,35 +13,40 @@
 <body>
     <header>
         <!-- Primary Navigation-->
+    
         <nav class="navbar">
-            <div class="logo">
-                Assist<span>Well</span>
-                </div>
-            <div>
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="features.html">Features</a></li>
-                    <li><a href="shop.html">Shop</a></li>
-                    <li><a href="guide.html">Guide</a></li>
-                    <li><a href="insights.html" style="color:#58cce6; font-weight: 800">Insights</a></li>
-                    </ul>
+            <div class="logo">Assist<span>Well</span></div>
+  
+            <!-- Hamburger Icon for mobile -->
+            <div class="hamburger" id="hamburger">
+              ☰
             </div>
+  
+            <!-- Navigation Links -->
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="guide.html">Guide</a></li>
+                <li><a href="insights.html" style="color: #58cce6; font-weight: 1000;">Insights</a></li>
+            </ul>
         </nav>
         <!-- Secondary Navigation-->
-         <nav class="secondary-nav">
+        <div class="secondary-nav">
             <div class="nav-actions">
-                <input type="text" placeholder="Search" class="search-bar">
-                <img src="Images/la_cart-plus.png" height="10px"; width="10px"; color="#ffffff" alt="Cart" class="cart-icon">
+              <input type="text" class="search-bar" placeholder="Search..." />
+              <img src="Images/la_cart-plus.png" alt="Cart" class="cart-icon" />
             </div>
-        </nav>
+        </div>
+        
     </header>
     <!-- Insights-->
     <br><br>
     <h1 class="h1">Insights</h1>
-    <br><p class="p1">A blend of expert health articles and visual content to help you stay informed and inspired.</p>
+    <br><p class="p1-gen">A blend of expert health articles and visual content to help you stay informed and inspired.</p>
     <br>
-    <p class="h2">Featured Blogs & Articles</p>
+    <p class="p1-gen">Keep checking this space for upcoming insights!</p>
     <!-- Gallery-->
     <br><br>
     <h1 class="h1">Gallery</h1>
@@ -55,8 +60,8 @@
             <p class="p1-columns">Stay Informed! Stay Healthy!</P>
         </div>
     <!-- 6 Photo grid-->
-        <div class="new-section-insights">
-            <div class="image-grid" style="width: 50%;">
+        <div class="section-item">
+            <div class="image-grid">
             <img src="Images/unnamed.png" alt="Image 1" onclick="openLightbox(this)">
             <img src="Images/image 2.png" alt="Image 2" onclick="openLightbox(this)">
             <img src="Images/image 1.png" alt="Image 3" onclick="openLightbox(this)">
@@ -65,7 +70,7 @@
             <img src="Images/Asset 221 1.png" alt="Image 6" onclick="openLightbox(this)">
             </div>
         </div>    
-    <!-- Lightbox Modal -->
+    
     <!-- Lightbox Modal -->
         <div id="lightbox" class="lightbox">
             <span class="close-btn" onclick="closeLightbox()">×</span>
@@ -82,9 +87,10 @@
         <p class="footer-body"> Phone: (123) 456-7890</p><br>
         <img src="Images/prime_twitter.svg" height="20px"; width="20px">
         <img src="Images/mdi_linkedin.svg" height="20px"; width="20px">
-        <img src="Images/mdi_instagram.svg" height="20px"; width="20px">
+        <img src="/Images/mdi_instagram.svg" height="20px"; width="20px">
         <img src="Images/ic_baseline-facebook.svg" height="20px"; width="20px">
         <br><br>
+        <p class="footer-body"> Assist Sensor illustration credits: Olga Serzhantova</p>
         <p class="footer-body"> © 2025 Assist Well. All rights reserved.</p><br>
      </footer>
 </body>
@@ -111,4 +117,12 @@
     document.getElementById("lightbox-img").src = images[currentIndex].src;
   }
 </script>
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+  
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
 </html>
