@@ -13,78 +13,152 @@
 <body>
     <header>
         <!-- Primary Navigation-->
-         <nav class="navbar">
-            <div class="logo">
-                Assist<span>Well</span>
-                </div>
-            <div>
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="features.html">Features</a></li>
-                    <li><a href="shop.html" style="color:#58cce6; font-weight: 800">Shop</a></li>
-                    <li><a href="guide.html">Guide</a></li>
-                    <li><a href="insights.html">Insights</a></li>
-                    </ul>
+    
+        <nav class="navbar">
+            <div class="logo">Assist<span>Well</span></div>
+  
+            <!-- Hamburger Icon for mobile -->
+            <div class="hamburger" id="hamburger">
+              ☰
             </div>
+  
+            <!-- Navigation Links -->
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="shop.html" style="color: #58cce6; font-weight: 1000;">Shop</a></li>
+                <li><a href="guide.html">Guide</a></li>
+                <li><a href="insights.html">Insights</a></li>
+            </ul>
         </nav>
         <!-- Secondary Navigation-->
-         <nav class="secondary-nav">
+        <div class="secondary-nav">
             <div class="nav-actions">
-                <input type="text" placeholder="Search" class="search-bar">
-                <img src="Images/la_cart-plus.png" height="10px"; width="10px"; color="#ffffff" alt="Cart" class="cart-icon">
+              <input type="text" class="search-bar" placeholder="Search..." />
+              <img src="Images/la_cart-plus.png" alt="Cart" class="cart-icon" />
             </div>
-        </nav>
+        </div>
+        
     </header>
     <!-- Explore Our Innovative Health Devices! -->
     <br><br>
     <h1 class="h1">Explore Our Innovative Health Devices!</h1>
-    <br><p class="p1">Shop Our Other Products for Complete Migraine Relief!</p><br>
+    <br><p class="p1-gen">Shop Our Other Products for Complete Migraine Relief!</p><br>
 
     <!--Grid Column-->
-    <div class="grid-container">
+    <!-- Shop Grid: Each column has a product and CTA -->
+<div class="shop-grid">
+    <div class="product-column">
         <div class="grid-item">
-            <img src="Images/image 2.png" height="160px">
+            <img src="/Images/image 2.png" height="160px">
             <br><br>
             <p><strong>Heat & Cold Therapy Wrap</strong></p>
             <br><p class="p1-columns">A wrap that can be heated or cooled to provide targeted relief on the neck and shoulders.</p>
         </div>
+        <div class="CTA-item">Add to Cart</div>
+    </div>
+
+    <div class="product-column">
         <div class="grid-item">
-            <img src="Images/image 1.png" height="160px">
+            <img src="/Images/image 1.png" height="160px">
             <br><br>
             <p><strong>CoolRelief Cap</strong></p>
-            <br><p class="p1-columns">A cooling and compression cap that helps relieve migraine pain.</p>
+            <br><p class="p1-columns">A cooling and compression cap that helps relieve migraine pain, and helps in feeling relax. </p>
         </div>
+        <div class="CTA-item">Add to Cart</div>
+    </div>
+
+    <div class="product-column">
         <div class="grid-item">
-            <img src="Images/unnamed.png" height="160px">
+            <img src="/Images/unnamed.png" height="160px">
             <br><br>
             <p><strong>Aura Glasses</strong></p>
             <br><p class="p1-columns">Designed to reduce light sensitivity, which is a common migraine trigger.</p>
         </div>
-    </div>
-    <!-- Grid for CTA -->
-    <div class="CTA-container" style="padding-top: 16px;">
-        <div class="CTA-item">Add to Cart</div>
-        <div class="CTA-item">Add to Cart</div>
         <div class="CTA-item">Add to Cart</div>
     </div>
+</div>
+
 
     <!-- AssistWell Sensor – Prescription-Only for Personalized Care -->
     <br><br>
     <h1 class="h1">AssistWell Sensor – Prescription-Only for Personalized Care</h1>
-    <br><P class="p1">The AssistWell Sensor is a cutting-edge health monitoring device designed for migraine management. To ensure the best care and accurate usage, it is available exclusively through a doctor’s prescription. Your healthcare provider will assess your needs and guide you on how to integrate the sensor into your personalized health plan. Talk to your doctor today to see if the AssistWell Sensor is right for you!</P>
-    <br><p class="p1">Choose a plan that fits your lifestyle!</p>
-    <br><br>
+    <br><P class="p1-gen">The AssistWell Sensor is a cutting-edge health monitoring device designed for migraine management. To ensure the best care and accurate usage, it is available exclusively through a doctor’s prescription. Your healthcare provider will assess your needs and guide you on how to integrate the sensor into your personalized health plan. Talk to your doctor today to see if the AssistWell Sensor is right for you!</P>
+    <br><p class="p1-gen">Choose a plan that fits your lifestyle!</p>
+    <!-- Sortable Table Section -->
+    <section class="sortable-table-section">
+        <div class="table-container">
+            <table id="sortableTable">
+                <thead>
+                    <tr>
+                        <th class="sortable">Plan Features</th>
+                        <th class="sortable">Basic Plan</th>
+                        <th class="sortable">Premium Plan</th>
+                        <th class="sortable">Family Plan</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Cost/month</td><td>$9.99/month</td><td>$19.99/month</td><td>$29.99/month</td></tr>
+                    <tr><td>Number of users</td><td>1</td><td>1</td><td>4</td></tr>
+                    <tr><td>Real-time health tracking and alerts</td><td>Included </td><td>Included </td><td>Included </td></tr>
+                    <tr><td>Monthly Health Summary Reports</td><td>Included </td><td>Included </td><td>Included </td></tr>
+                    <tr><td>Advanced data insights and trend analysis</td><td>Not-Included</td><td>Included </td><td>Included </td></tr>
+                    <tr><td>Personalized recommendations and migraine trigger alerts</td><td>Not-Included</td><td>Included</td><td>Included</td></tr>
+                    <tr><td>Priority Customer support</td><td>Not-Included</td><td>Included</td><td>Included</td></tr>
+                </tbody>
+            </table>
+        </div>
+  </section>
+
     <footer class="footer">
         <p class="footer-title"> Contact Us:</p><br>
         <p class="footer-body"> Email: contact@assistwell.com</p><br>
         <p class="footer-body"> Phone: (123) 456-7890</p><br>
-        <img src="Images/prime_twitter.svg" height="20px"; width="20px">
-        <img src="Images/mdi_linkedin.svg" height="20px"; width="20px">
-        <img src="Images/mdi_instagram.svg" height="20px"; width="20px">
-        <img src="Images/ic_baseline-facebook.svg" height="20px"; width="20px">
+        <img src="/Images/prime_twitter.svg" height="20px"; width="20px">
+        <img src="/Images/mdi_linkedin.svg" height="20px"; width="20px">
+        <img src="/Images/mdi_instagram.svg" height="20px"; width="20px">
+        <img src="/Images/ic_baseline-facebook.svg" height="20px"; width="20px">
         <br><br>
+        <p class="footer-body"> Assist Sensor illustration credits: Olga Serzhantova</p>
         <p class="footer-body"> © 2025 Assist Well. All rights reserved.</p><br>
      </footer>
+
+     <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+      
+        hamburger.addEventListener('click', () => {
+          navLinks.classList.toggle('show');
+        });
+      </script>
+
+    <!-- Sorting Script -->
+<script>
+    document.querySelectorAll("th.sortable").forEach((header, columnIndex) => {
+      header.addEventListener("click", () => {
+        const table = header.closest("table");
+        const tbody = table.querySelector("tbody");
+        const rowsArray = Array.from(tbody.querySelectorAll("tr"));
+        const ascending = !header.classList.contains("asc");
+  
+        rowsArray.sort((rowA, rowB) => {
+          const cellA = rowA.children[columnIndex].innerText.trim();
+          const cellB = rowB.children[columnIndex].innerText.trim();
+  
+          const isNumeric = !isNaN(cellA) && !isNaN(cellB);
+          return ascending
+            ? (isNumeric ? cellA - cellB : cellA.localeCompare(cellB))
+            : (isNumeric ? cellB - cellA : cellB.localeCompare(cellA));
+        });
+  
+        header.classList.toggle("asc", ascending);
+        header.classList.toggle("desc", !ascending);
+  
+        tbody.innerHTML = "";
+        rowsArray.forEach(row => tbody.appendChild(row));
+      });
+    });
+  </script>
 </body>
 </html>
