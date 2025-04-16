@@ -13,53 +13,63 @@
 <body>
     <header>
         <!-- Primary Navigation-->
+    
         <nav class="navbar">
-            <div class="logo">
-                Assist<span>Well</span>
-                </div>
-            <div>
-                <ul class="nav-links">
-                    <li><a href="index.html" style="color:#58cce6; font-weight: 800">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="features.html">Features</a></li>
-                    <li><a href="shop.html">Shop</a></li>
-                    <li><a href="guide.html">Guide</a></li>
-                    <li><a href="insights.html">Insights</a></li>
-                    </ul>
+            <div class="logo">Assist<span>Well</span></div>
+  
+            <!-- Hamburger Icon for mobile -->
+            <div class="hamburger" id="hamburger">
+              ☰
             </div>
+  
+            <!-- Navigation Links -->
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" style="color: #58cce6; font-weight: 1000;">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="guide.html">Guide</a></li>
+                <li><a href="insights.html">Insights</a></li>
+            </ul>
         </nav>
         <!-- Secondary Navigation-->
-        <nav class="secondary-nav">
+        <div class="secondary-nav">
             <div class="nav-actions">
-                <input type="text" placeholder="Search" class="search-bar">
-                <img src="Images/la_cart-plus.png" height="10px"; width="10px"; color="#ffffff" alt="Cart" class="cart-icon">
+              <input type="text" class="search-bar" placeholder="Search..." />
+              <img src="Images/la_cart-plus.png" alt="Cart" class="cart-icon" />
             </div>
-        </nav>
+        </div>
+        
     </header>
-    <!--Home page top background img with text overlay -->
-    <div style="background-image:url(Images/Frame\ 474.png); background-size: cover; background-repeat: no-repeat; height: 500px; width: 1100px; background-position: center;">
-        <br><br>
-        <br><br>
-        <br><br>
-        <br><br>
-        <br><br>
-        <br><br>
-        <p style="font-size:x-large; margin-left: 128px;" class="logo">Assist<span>Well</span></p>
-        <p style="margin-left: 128px;" class="p1">Track. Prevent. Thrive.</p>
-        <p style="margin-left: 128px; width: 80%;" class="p1">Your personalized health companion for managing migraines and overall well-being.</p>
-    </div>
+
+    <!-- Home page top background with overlay text -->
+    <section class="hero-wrapper">
+        <div class="hero-container">
+          <div class="hero-content">
+            <h1 class="logo">Assist<span>Well</span></h1>
+            <p class="p1 tagline">Track. Prevent. Thrive.</p>
+            <p class="p1 description">
+              Your personalized health companion for managing migraines and overall well-being.
+            </p>
+          </div>
+        </div>
+      </section>      
+
     
     <!--What is AssistWell -->
     <br>
     <div>
         <h1 class="h1">What is AssistWell?</h1>
     <br>
-    <p class="p1">Assist Well is a smart health companion designed to help you proactively manage migraines and improve overall well-being. By tracking key health metrics like heart rate, glucose levels, and sleep patterns, it provides personalized insights and alerts to help you make informed lifestyle choices.</p>
+    <p class="p1-gen">Assist Well is a smart health companion designed to help you proactively manage migraines and improve overall well-being. By tracking key health metrics like heart rate, glucose levels, and sleep patterns, it provides personalized insights and alerts to help you make informed lifestyle choices.</p>
     <br>
-        <div class="text-icon">
+    <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9141901/" target="_blank">
+      <div class="text-icon">
         <p class="text-link">Learn More</p>
         <img src="/Images/clarity_caret-line.svg" height="24px"; width="24px">
-        </div>
+      </div>
+    </a>    
+      
     </div>
     
     <!--Why Choose Assist Well -->
@@ -67,18 +77,20 @@
     <div>
         <h1 class="h1">Why Choose Assist Well?</h1>
         <br>
-        <p class="p1"><span style="font-weight: 500"> Real-Time Health Monitoring:</span> Stay informed with live health metrics.<br>
+        <p class="p1-gen"><span style="font-weight: 500"> Real-Time Health Monitoring:</span> Stay informed with live health metrics.<br>
         <br>
         <span style="font-weight: 500">Personalized Alerts:</span> Get notified of potential migraine triggers before they happen. <br>
         <br>
         <span style="font-weight: 500">Data Insights:</span> Analyze health patterns to make proactive lifestyle changes.<br>
         <br>
         <span style="font-weight: 500">Comprehensive Tracking:</span> Sync seamlessly with your wearable devices.</p><br>
-        <div class="text-icon">
-        <p class="text-link">Learn More</p>
-        <img src="/Images/clarity_caret-line.svg" height="24px"; width="24px">
-        </div>
-        <br><br>
+        <a href="https://www.figma.com/proto/e8rl8XJ2S8O9Ee38YOv9Rc/AssistWell?page-id=1215%3A343&node-id=1573-3775&viewport=778%2C108%2C0.11&t=KUFI2XzHcleC4yBM-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1573%3A3775&show-proto-sidebar=1" target="_blank">
+          <div class="text-icon">
+            <p class="text-link">Learn More</p>
+            <img src="/Images/clarity_caret-line.svg" height="24px"; width="24px">
+          </div>
+        </a>
+          <br><br>
     </div>
     <!-- Footer -->
      <footer class="footer">
@@ -90,7 +102,17 @@
         <img src="/Images/mdi_instagram.svg" height="20px"; width="20px">
         <img src="/Images/ic_baseline-facebook.svg" height="20px"; width="20px">
         <br><br>
+        <p class="footer-body"> Assist Sensor illustration credits: Olga Serzhantova</p>
         <p class="footer-body"> © 2025 Assist Well. All rights reserved.</p><br>
      </footer>
+
+     <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+      
+        hamburger.addEventListener('click', () => {
+          navLinks.classList.toggle('show');
+        });
+      </script>
 </body>
 </html>

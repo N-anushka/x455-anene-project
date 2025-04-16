@@ -100,6 +100,73 @@ body {
     font-weight: 700;  /* Bold 'Well' */
 }
 
+/* Hamburger hidden on desktop */
+.hamburger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .secondary-nav {
+        flex-direction: row;
+        justify-content: center;
+        padding: 10px 20px;
+    }
+
+    .nav-actions {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .search-bar {
+        flex: 1;
+        min-width: 0;
+        max-width: 300px;
+    }
+
+    .cart-icon {
+        width: 28px;
+        height: 28px;
+    }
+
+    .search-bar {
+        margin-right: 10px;
+    }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap;
+        padding: 10px 20px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        background-color: #1D2D44;
+        display: none;
+        padding: 10px 0;
+    }
+
+    .nav-links li {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
 /* Body */
 
 .h1 {
@@ -150,9 +217,21 @@ body {
     line-height: normal;
 }
 
-.p1 {
+.p1-gen {
     margin-left: 128px;
     margin-right: 128px;
+    align-self: stretch;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 1.5;
+}
+/* p1: hero text overlay*/
+.p1 {
+    margin-left: 0px;
+    margin-right: 0px;
     align-self: stretch;
     color: #FFF;
     font-family: Poppins;
@@ -191,6 +270,74 @@ body {
     font-style: normal;
     font-weight: 200;
 }
+
+/*home page hero section */
+.hero-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .hero-container {
+    width: 100%;
+    max-width: 1400px;
+    aspect-ratio: 11 / 5; /* maintains 1100x500 ratio */
+    background-image: url('Images/Frame 474.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    display: flex;
+    align-items: center;
+  }
+  
+  .hero-content {
+    padding-left: 128px;
+    color: white;
+    text-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    max-width: 80%;
+  }
+  
+  .hero-content .logo {
+    font-size: 35px;
+    font-weight: 300;
+    color: #ffffff;
+  }
+  
+  .hero-content .logo span {
+    font-weight: 700;
+  }
+  
+  .tagline {
+    font-size: 1.25rem;
+    margin-top: 10px;
+  }
+  
+  .description {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .hero-content {
+      padding-left: 32px;
+      max-width: 100%;
+    }
+  
+    .logo {
+      font-size: 28px;
+    }
+  
+    .tagline {
+      font-size: 1rem;
+    }
+  
+    .description {
+      font-size: 0.9rem;
+    }
+  }
+  
+  
+
 
 /* Slideshow CSS from W3School */
 
@@ -283,6 +430,62 @@ body {
 }
 
 /* Columns for shop page*/
+
+.shop-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin: 0 128px;
+}
+
+.product-column {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.grid-item {
+    background-color: #3E5C76;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #3E5C76;
+    border-radius: 20px;
+    color: #fff;
+}
+
+.CTA-item {
+    background-color: #1B76FF;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #1B76FF;
+    border-radius: 20px;
+    color: #fff;
+}
+
+.p1-columns {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .shop-grid {
+        margin: 0 32px;
+    }
+}
+
+@media (max-width: 480px) {
+    .shop-grid {
+        margin: 0 16px;
+    }
+}
+
+
+
+
 .grid-container {
     display: grid; 
     gap: 30px;  /* Space between columns */
@@ -319,6 +522,70 @@ body {
     color: #fff;
 }
 
+
+/* Sortable Table Section */
+.sortable-table-section {
+    margin: 64px 128px;
+  }
+  
+.table-heading {
+    color: white;
+    font-family: Poppins, sans-serif;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+.table-container {
+    overflow-x: auto;
+    border: 1px solid white;
+    border-radius: 10px;
+  }
+  
+#sortableTable {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px;
+    color: white;
+    font-family: Poppins, sans-serif;
+  }
+  
+#sortableTable th,
+#sortableTable td {
+    padding: 12px 16px;
+    border: 1px solid white;
+    text-align: left;
+  }
+  
+#sortableTable thead {
+    background-color: #3E5C76;
+  }
+  
+#sortableTable tbody tr {
+    background-color: #0D1321;
+  }
+  
+#sortableTable th.sortable:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+@media (max-width: 768px) {
+    .sortable-table-section {
+      margin: 32px 24px;
+    }
+  
+.table-heading {
+      font-size: 22px;
+    }
+  
+#sortableTable th,
+#sortableTable td {
+      font-size: 14px;
+      padding: 10px 12px;
+    }
+  }
+  
+
 /*Insights  page divided in two*/
 .section1 {
     display: grid;
@@ -326,11 +593,13 @@ body {
     align-items: center;
     gap: 0;
     column-gap: 0px;
+    margin-left: 128px;
+    margin-right: 128px;
 }
 
 .section-item {
-    margin-left: 128px;
-    margin-right: 128px;
+    margin-left: 0px;
+    margin-right: 0px;
     overflow: visible;
     background: none;
     color: #ffffff;
@@ -414,6 +683,35 @@ body {
 .next {
     right: 40px;
   }
+
+  @media (max-width: 768px) {
+    .section1 {
+      grid-template-columns: 1fr; /* Stack columns */
+      margin-left: 24px;
+      margin-right: 24px;
+    }
+  
+    .section-item {
+      margin-bottom: 24px;
+    }
+  
+    .image-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 images per row on small screens */
+      width: 100%;
+    }
+  
+    .p1-columns {
+      font-size: 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .image-grid {
+      grid-template-columns: 1fr; /* 1 image per row on very small screens */
+    }
+  }
+
+
 /*W3 SchoolAccordion*/
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
@@ -459,6 +757,22 @@ body {
     content: "\2796"; /* Unicode character for "minus" sign (-) */
   }
 
+
+  @media (max-width: 768px) {
+    .accordion,
+    .h1,
+    .p1-gen,
+    .h2,
+    .h3,
+    .text-link,
+    .text-icon,
+    .panel {
+      margin-left: 24px;
+      margin-right: 24px;
+    }
+  }
+  
+  
 /* Footer */
 .footer {
     background-color: #1D2D44;

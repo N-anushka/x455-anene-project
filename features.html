@@ -13,28 +13,33 @@
 <body>
     <header>
         <!-- Primary Navigation-->
+    
         <nav class="navbar">
-            <div class="logo">
-                Assist<span>Well</span>
-                </div>
-            <div>
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="features.html" style="color:#58cce6; font-weight: 800">Features</a></li>
-                    <li><a href="shop.html">Shop</a></li>
-                    <li><a href="guide.html">Guide</a></li>
-                    <li><a href="insights.html">Insights</a></li>
-                    </ul>
+            <div class="logo">Assist<span>Well</span></div>
+  
+            <!-- Hamburger Icon for mobile -->
+            <div class="hamburger" id="hamburger">
+              ☰
             </div>
+  
+            <!-- Navigation Links -->
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="features.html" style="color: #58cce6; font-weight: 1000;">Features</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="guide.html">Guide</a></li>
+                <li><a href="insights.html">Insights</a></li>
+            </ul>
         </nav>
         <!-- Secondary Navigation-->
-         <nav class="secondary-nav">
+        <div class="secondary-nav">
             <div class="nav-actions">
-                <input type="text" placeholder="Search" class="search-bar">
-                <img src="Images/la_cart-plus.png" height="10px"; width="10px"; color="#ffffff" alt="Cart" class="cart-icon">
+              <input type="text" class="search-bar" placeholder="Search..." />
+              <img src="Images/la_cart-plus.png" alt="Cart" class="cart-icon" />
             </div>
-        </nav>
+        </div>
+        
     </header>
     <!-- Features: carousel -->
     <br><br>
@@ -76,11 +81,11 @@
     <br><br>
     <!-- How we collects and analyzes health data -->
     <h1 class="h1">How we collects and analyzes health data</h1>
-    <br><P class="p1">Assist Well seamlessly integrates with wearable devices, including our proprietary AssistSensor and popular smartwatches, to collect real-time health metrics. Our advanced sensors track vital data such as glucose levels, heart rate, steps, and sleep patterns with high precision. This data is securely synced with the Assist Well mobile app, where it is processed using intelligent algorithms to provide actionable insights. By leveraging machine learning, our platform identifies patterns and correlations unique to each user, helping them understand their health trends and potential migraine triggers. This personalized approach ensures that users receive relevant alerts, lifestyle recommendations, and health insights, empowering them to make informed decisions and proactively manage their well-being.</P>
+    <br><P class="p1-gen">Assist Well seamlessly integrates with wearable devices, including our proprietary AssistSensor and popular smartwatches, to collect real-time health metrics. Our advanced sensors track vital data such as glucose levels, heart rate, steps, and sleep patterns with high precision. This data is securely synced with the Assist Well mobile app, where it is processed using intelligent algorithms to provide actionable insights. By leveraging machine learning, our platform identifies patterns and correlations unique to each user, helping them understand their health trends and potential migraine triggers. This personalized approach ensures that users receive relevant alerts, lifestyle recommendations, and health insights, empowering them to make informed decisions and proactively manage their well-being.</P>
     <br><br>
     <!-- Benefits of Proactive Health Monitoring -->
     <h1 class="h1">Benefits of Proactive Health Monitoring</h1>
-    <br><P class="p1">Proactive health monitoring is at the core of Assist Well’s mission to empower individuals to live migraine-free and lead healthier lives. By continuously tracking essential health metrics, users can detect early warning signs and take preventive actions before minor issues escalate into major health concerns. Assist Well provides personalized notifications and insights, helping users identify lifestyle patterns and habits that impact their health. With this knowledge, they can make informed adjustments to their diet, sleep schedule, or activity levels, reducing the likelihood of migraine triggers. Additionally, by maintaining a comprehensive health history, users can share detailed reports with healthcare professionals, facilitating better-informed consultations and personalized treatment plans. Assist Well not only enhances self-awareness but also fosters a proactive approach to health management, ultimately leading to improved quality of life and well-being.</P>
+    <br><P class="p1-gen">Proactive health monitoring is at the core of Assist Well’s mission to empower individuals to live migraine-free and lead healthier lives. By continuously tracking essential health metrics, users can detect early warning signs and take preventive actions before minor issues escalate into major health concerns. Assist Well provides personalized notifications and insights, helping users identify lifestyle patterns and habits that impact their health. With this knowledge, they can make informed adjustments to their diet, sleep schedule, or activity levels, reducing the likelihood of migraine triggers. Additionally, by maintaining a comprehensive health history, users can share detailed reports with healthcare professionals, facilitating better-informed consultations and personalized treatment plans. Assist Well not only enhances self-awareness but also fosters a proactive approach to health management, ultimately leading to improved quality of life and well-being.</P>
     <br><br>
     <!-- Footer-->
     <footer class="footer">
@@ -92,10 +97,19 @@
         <img src="/Images/mdi_instagram.svg" height="20px"; width="20px">
         <img src="/Images/ic_baseline-facebook.svg" height="20px"; width="20px">
         <br><br>
+        <p class="footer-body"> Assist Sensor illustration credits: Olga Serzhantova</p>
         <p class="footer-body"> © 2025 Assist Well. All rights reserved.</p><br>
      </footer>
 </body>
 <script>
+
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+      
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+
 let slideIndex = 0;
 showSlides();
 
